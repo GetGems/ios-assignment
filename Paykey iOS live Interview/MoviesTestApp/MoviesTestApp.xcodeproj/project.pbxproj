@@ -10,7 +10,6 @@
 		25548DFA25D945CE0085902E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25548DF925D945CE0085902E /* AppDelegate.m */; };
 		25548DFD25D945CE0085902E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25548DFC25D945CE0085902E /* SceneDelegate.m */; };
 		25548E0025D945CE0085902E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25548DFF25D945CE0085902E /* ViewController.m */; };
-		25548E0325D945CE0085902E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25548E0125D945CE0085902E /* Main.storyboard */; };
 		25548E0525D945CF0085902E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25548E0425D945CF0085902E /* Assets.xcassets */; };
 		25548E0825D945CF0085902E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25548E0625D945CF0085902E /* LaunchScreen.storyboard */; };
 		25548E0B25D945CF0085902E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25548E0A25D945CF0085902E /* main.m */; };
@@ -25,6 +24,7 @@
 		25548E8825DA613F0085902E /* PKMoviesListItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25548E8725DA613F0085902E /* PKMoviesListItemViewModel.m */; };
 		25548ECD25DB99060085902E /* PKMoviesListItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25548ECB25DB99060085902E /* PKMoviesListItemTableViewCell.m */; };
 		25548ECE25DB99060085902E /* PKMoviesListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25548ECC25DB99060085902E /* PKMoviesListItemTableViewCell.xib */; };
+		25548ED725DB9D2E0085902E /* PKMoviesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25548ED625DB9D2E0085902E /* PKMoviesListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		25548DFC25D945CE0085902E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		25548DFE25D945CE0085902E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		25548DFF25D945CE0085902E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		25548E0225D945CE0085902E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25548E0425D945CF0085902E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25548E0725D945CF0085902E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25548E0925D945CF0085902E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		25548ECA25DB99060085902E /* PKMoviesListItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKMoviesListItemTableViewCell.h; sourceTree = "<group>"; };
 		25548ECB25DB99060085902E /* PKMoviesListItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKMoviesListItemTableViewCell.m; sourceTree = "<group>"; };
 		25548ECC25DB99060085902E /* PKMoviesListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PKMoviesListItemTableViewCell.xib; sourceTree = "<group>"; };
+		25548ED625DB9D2E0085902E /* PKMoviesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PKMoviesListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,6 @@
 				25548DFC25D945CE0085902E /* SceneDelegate.m */,
 				25548DFE25D945CE0085902E /* ViewController.h */,
 				25548DFF25D945CE0085902E /* ViewController.m */,
-				25548E0125D945CE0085902E /* Main.storyboard */,
 				25548E0425D945CF0085902E /* Assets.xcassets */,
 				25548E0625D945CF0085902E /* LaunchScreen.storyboard */,
 				25548E0925D945CF0085902E /* Info.plist */,
@@ -202,6 +201,7 @@
 				25548E6C25DA566D0085902E /* PKMoviesListViewProtocol.h */,
 				25548E6D25DA56A10085902E /* PKMoviesListViewController.h */,
 				25548E6E25DA56A10085902E /* PKMoviesListViewController.m */,
+				25548ED625DB9D2E0085902E /* PKMoviesListViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,10 +283,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25548ED725DB9D2E0085902E /* PKMoviesListViewController.xib in Resources */,
 				25548E0825D945CF0085902E /* LaunchScreen.storyboard in Resources */,
 				25548E0525D945CF0085902E /* Assets.xcassets in Resources */,
 				25548ECE25DB99060085902E /* PKMoviesListItemTableViewCell.xib in Resources */,
-				25548E0325D945CE0085902E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +317,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		25548E0125D945CE0085902E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25548E0225D945CE0085902E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25548E0625D945CF0085902E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -456,13 +448,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HVUD5U693H;
 				INFOPLIST_FILE = MoviesTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paykey.MoviesTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,13 +467,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HVUD5U693H;
 				INFOPLIST_FILE = MoviesTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paykey.MoviesTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

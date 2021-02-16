@@ -35,6 +35,8 @@
     self.viewModel = [[PKMoviesListViewModel alloc] initWithService:self.service andView:self];
     UINib *nib = [UINib nibWithNibName:kPKMoviesListItemTableViewCellIdentifier bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:kPKMoviesListItemTableViewCellIdentifier];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (PKMoviesAPIService*)service {
@@ -80,11 +82,6 @@
 }
 
 - (void)showDetailsForIdentifier:(NSInteger)identifier {
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    PKMovieDetailsViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"PKMovieDetailsViewController"];
-//    
-//    [viewController configureWithIdentifier:identifier];
-//    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

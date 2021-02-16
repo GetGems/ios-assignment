@@ -10,7 +10,6 @@
 
 @interface PKMoviesListItemTableViewCell ()
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
-@property (nonatomic, weak) IBOutlet UILabel *popularityLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *movieImageView;
 @end
 
@@ -32,7 +31,6 @@ NSString * const kPKMoviesListItemTableViewCellIdentifier = @"PKMoviesListItemTa
     
     self.titleLabel.text = viewModel.title;
     self.movieImageView.image = viewModel.banner;
-    self.popularityLabel.text = viewModel.popularity;
         
     __weak PKMoviesListItemTableViewCell *weakSelf = self;
     [viewModel loadBannerWithToken:viewModel.hash andCompletion:

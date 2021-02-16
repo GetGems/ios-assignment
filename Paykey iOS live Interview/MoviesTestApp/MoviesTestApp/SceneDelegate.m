@@ -6,18 +6,24 @@
 //
 
 #import "SceneDelegate.h"
+#import "PKMoviesListViewController.h"
 
 @interface SceneDelegate ()
-
 @end
 
 @implementation SceneDelegate
-
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    if ([scene isKindOfClass:[UIWindowScene class]]) {
+        UIWindowScene* windowScene = (UIWindowScene*)scene;
+        self.window = [[UIWindow alloc] initWithFrame:windowScene.coordinateSpace.bounds];
+        self.window.windowScene = windowScene;
+        self.window.rootViewController = [[PKMoviesListViewController alloc] initWithNibName:@"PKMoviesListViewController" bundle:nil];
+        [self.window makeKeyAndVisible];
+    }
 }
 
 
